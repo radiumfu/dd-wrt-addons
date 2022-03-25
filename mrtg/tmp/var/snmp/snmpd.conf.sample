@@ -1,0 +1,14 @@
+syslocation <string-location>
+syscontact <string-contact>
+sysname <string-name>
+rocommunity public
+rwcommunity private
+sysservices 9
+pass_persist .1.3.6.1.4.1.2021.255 /etc/wl_snmpd.sh
+extend cputemp /jffs/bin/snmp-ext-cpu-temp.sh
+extend wltemp  /jffs/bin/snmp-ext-wl-temp.sh
+extend tcpcnt /jffs/bin/snmp-ext-connection-cnt.sh tcp
+extend udpcnt /jffs/bin/snmp-ext-connection-cnt.sh udp
+extend wifinoisedbm /jffs/bin/snmp-ext-wifi-noise-dbm.sh 95
+extend wifichannel /jffs/bin/snmp-ext-wifi-channel.sh
+extend ping /jffs/bin/snmp-ext-ping.sh <ping-host> 1
