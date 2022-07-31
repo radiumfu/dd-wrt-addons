@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# STARTUP script #
+
+# wait until /var/snmp/snmpd.conf is ready
+# without this sleep the snmpd.conf file is somehow? reverted back to default
+sleep 4
+
+# add MRTG extensions to SNMP config
+#
+/jffs/bin/append-file.sh -log snmpd.startup -reload snmpd /jffs/etc/config/snmpd.conf.ext /var/snmp/snmpd.conf
