@@ -1,0 +1,9 @@
+extend cputemp /jffs/bin/snmp-ext-cpu-temp.sh
+extend wltemp /jffs/bin/snmp-ext-wl-temp.sh
+extend tcpcnt /jffs/bin/snmp-ext-connection-cnt.sh tcp
+extend udpcnt /jffs/bin/snmp-ext-connection-cnt.sh udp
+extend wifinoisedbm /jffs/bin/snmp-ext-wifi-noise-dbm.sh 95
+extend wifichannel /jffs/bin/snmp-ext-wifi-channel.sh
+extend ping /jffs/bin/snmp-ext-ping.sh dns.google.com
+extend vlan3all /jffs/bin/snmp-ext-he-con-cnt.sh
+extend vlan3est /jffs/bin/snmp-ext-he-con-cnt.sh ESTABLISHED
