@@ -3,7 +3,7 @@
 # append srcfile line-by-line at the end of dstfile if line is not in dstfile yet #
 
 # usage example to add snmpd extensions (place in /jffs/etc/name.startup):
-# > /jfss/bin/$0 -log snmpd.conf -reload snmpd /jffs/bin/snmpd.conf.ext /var/snmp/snmpd.conf
+# > /jfss/bin/$0 -log snmpd.conf -reload snmpd /jffs/etc/config/snmpd.conf.ext /var/snmp/snmpd.conf
 
 # version
 #
