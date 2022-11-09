@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# SNMP extension for DD-WRT - WL temperatue * 10 [C] #
+#
+
+# cannot find anything n /proc to display wl temperature so use web page
+
+# router status page
+http=http://localhost/Status_Router.asp
+auth='<login>:<password>'
+# extract wl temperature info from html page
+curl -u $auth -s -o - $http | grep -o "WL0 ...." | cut -d' ' -f2 | tr -d .
