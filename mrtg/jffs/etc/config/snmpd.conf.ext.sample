@@ -7,3 +7,5 @@ extend wifichannel /jffs/bin/snmp-ext-wifi-channel.sh
 extend ping /jffs/bin/snmp-ext-ping.sh dns.google.com
 extend vlan3all /jffs/bin/snmp-ext-he-con-cnt.sh
 extend vlan3est /jffs/bin/snmp-ext-he-con-cnt.sh ESTABLISHED
+extend dhcplease /jffs/bin/snmp-ext-dhcp-clients.sh
+extend wifiassoc /jffs/bin/snmp-ext-wifi-assoc.sh
