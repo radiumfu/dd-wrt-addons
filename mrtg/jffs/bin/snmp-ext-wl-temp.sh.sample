@@ -9,4 +9,4 @@
 http=http://localhost/Status_Router.asp
 auth='<login>:<password>'
 # extract wl temperature info from html page
-curl -u $auth -s -o - $http | grep -o "WL0 ...." | cut -d' ' -f2 | tr -d .
+curl -u $auth -s -o - $http | awk -F' |>' '/cpu_temp1/ {print $3; exit}' | tr -d .
