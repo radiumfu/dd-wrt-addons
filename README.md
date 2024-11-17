@@ -37,13 +37,13 @@ The results are avaiiable in **NET-SNMP-EXTEND-MIB** OIDs tree:
 
 Each extension has to be added to SNMPd config file (do not remove any existing lines):
     
-    /vat/snmp/snmpd.conf
+    /tmp/snmpd.conf
     
 Extension config line has the following format (consult snmpd doc for more details):
 
     extend <string-id> <full-path-to-script> <par1> ... <parN>
 
-There are helper scripts to automate process of adding extensions to **/vat/snmp/snmpd.conf** on each boot/reboot:
+There are helper scripts to automate process of adding extensions to **/tmp/snmpd.conf** on each boot/reboot:
 
 * [append-file.sh](mrtg/jffs/bin/append-file.sh) - script to add extensions to snmpd.conf
 
