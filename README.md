@@ -1,5 +1,5 @@
 # dd-wrt-addons
-dd-wrt extensions and addons - mostly Asus RT-N16/N18U related, but might work on other routers
+dd-wrt extensions and addons - mostly Asus RT-N16/N18U related, tested works on Netgear R7000, AC1900 might work on other routers
 
     Please note that scripts ending with .sample suffix have to be manually edited to provide
     specific parameters (like authentiction, ip addresses, gateways etc) to become fully functional.
